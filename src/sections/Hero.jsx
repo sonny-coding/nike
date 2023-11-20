@@ -11,10 +11,12 @@ const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
 
   return (
+    // collumn by default, row on xl screens
     <section
       id="home"
       className="flex flex-col justify-center w-full min-h-screen gap-10 xl:flex-row max-container"
     >
+      {/* this is the text section, column by default, on xl screens, width = 2/5 max width */}
       <div className="relative flex flex-col items-start justify-center w-full xl:w-2/5 max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
           Our Summer collections
@@ -46,7 +48,9 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* Image section */}
       <div className="relative flex items-center justify-center flex-1 bg-center bg-cover xl:min-h-screen max-xl:py-40 bg-primary bg-hero">
+        {/* bigShowImg is the default img */}
         <img
           src={bigShoeImg}
           alt="shoe colletion"

@@ -12,11 +12,11 @@ const App = () => {
         <PopularProducts />
       </section>
       <section className="padding">SuperQuality</section>
-      <section className="padding-x py-10">Services</section>
+      <section className="py-10 padding-x">Services</section>
       <section className="padding">SpecialOffers</section>
       <section className="bg-pale-blue padding">CustomerReviews</section>
-      <section className="padding-x sm:py-32 py-16 w-full">Subscribe</section>
-      <section className="bg-black padding-x padding-t pb-8">Footer</section>
+      <section className="w-full py-16 padding-x sm:py-32">Subscribe</section>
+      <section className="pb-8 bg-black padding-x padding-t">Footer</section>
     </main>
   );
 };
