@@ -1,5 +1,14 @@
 import Nav from "./components/Nav";
-import { Hero, PopularProducts, SuperQuality, Services } from "./sections";
+import {
+  Hero,
+  PopularProducts,
+  SuperQuality,
+  Services,
+  SpecialOffer,
+  CustomerReviews,
+  Subscribe,
+  Footer,
+} from "./sections";
 
 const App = () => {
   return (
@@ -17,10 +26,18 @@ const App = () => {
       <section className="py-10 padding-x">
         <Services />
       </section>
-      <section className="padding">SpecialOffers</section>
-      <section className="bg-pale-blue padding">CustomerReviews</section>
-      <section className="w-full py-16 padding-x sm:py-32">Subscribe</section>
-      <section className="pb-8 bg-black padding-x padding-t">Footer</section>
+      <section className="padding">
+        <SpecialOffer />
+      </section>
+      <section className="bg-pale-blue padding">
+        <CustomerReviews />
+      </section>
+      <section className="w-full py-16 padding-x sm:py-32">
+        <Subscribe />
+      </section>
+      <section className="pb-8 bg-black padding-x padding-t">
+        <Footer />
+      </section>
     </main>
   );
 };
